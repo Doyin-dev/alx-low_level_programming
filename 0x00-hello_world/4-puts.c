@@ -2,6 +2,7 @@
 
 int main(void)
 {
-    puts("Programming is like building a multilingual puzzle");
+    char message[] = "\"Programming is like building a multilingual puzzle";
+    printf("%s\n\n(52 chars long)\n", message);
     return 0;
 }
