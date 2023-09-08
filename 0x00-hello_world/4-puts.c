@@ -7,12 +7,10 @@
  */
 int main(void)
 {
-    char message[] = "\"Programming is like building a multilingual puzzle";
+char message[] = "\"Programming is like building a multilingual puzzle"; printf("%s\n\n(52 chars long)\n", message);
 
-    printf("%s\n\n(52 chars long)\n", message);
-
-    /* Using puts to print the message */
-    puts("Programming is like building a multilingual puzzle");
+/* Using puts to print the message */
+puts("Programming is like building a multilingual puzzle");
 
     return (0)
 }
