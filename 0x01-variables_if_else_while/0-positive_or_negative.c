@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -13,12 +12,80 @@
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); /* Seed for random number generation */
-    n = rand() - RAND_MAX / 2;
+	srand(time(0)); /* Seed for random number generation */
+	n = rand() - RAND_MAX / 2;
 
-    printf("%d is %s\n", n, n ? (n > 0 ? "positive" : "negative") : "zero");
+	printf("%d is %s\n", n, n ? (n > 0 ? "positive" : "negative") : "zero");
 
-    return (0);
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
