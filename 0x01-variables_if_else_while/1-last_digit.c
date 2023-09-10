@@ -11,6 +11,10 @@ int main(void)
 
     n = -98; // Change the number to -98
     lastDigit = n % 10;
+    if (lastDigit < 0)
+    {
+        lastDigit = -lastDigit; // Make lastDigit positive if it's initially negative
+    }
 
     printf("Last digit of %d is ", n);
 
@@ -24,7 +28,7 @@ int main(void)
     }
     else
     {
-        printf("%d and is less than 6 and not 0\n", lastDigit);
+        printf("-%d and is less than 6 and not 0\n", lastDigit);
     }
 
     return (0);
