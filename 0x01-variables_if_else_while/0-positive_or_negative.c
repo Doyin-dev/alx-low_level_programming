@@ -4,25 +4,88 @@
 
 /**
  * main - Entry point
+ *
  * Description: This program assigns a random number to variable n
- * and prints whether it's positive, zero, or negative.
+ *              and prints whether it's positive, zero, or negative.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); /* Seed for random number generation */
-    n = rand() - RAND_MAX / 2;
+	srand(time(0)); /* Seed for random number generation */
+	n = rand() - RAND_MAX / 2;
 
-    printf("The number %d is ", n);
+	printf("%d is %s\n", n, n ? (n > 0 ? "positive" : "negative") : "zero");
 
-    if (n > 0)
-        printf("positive\n");
-    else if (n == 0)
-        printf("zero\n");
-    else
-        printf("negative\n");
-
-    return (0);
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
