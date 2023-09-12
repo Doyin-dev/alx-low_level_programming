@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char letter = 'a'; /* Initialize a variable to store the letter */
+	char letter = 'a'; /* Initialize a variable for the letter */
 
 	while (letter <= 'z') /* Loop through the lowercase alphabet */
 	{
