@@ -8,7 +8,7 @@ int main(void)
 {
     int i;
 
-    i = 0;  /* Change this line to test with different numbers */
+    i = 0;  / Change this line to test with different numbers 
 
     positive_or_negative(i);
 
