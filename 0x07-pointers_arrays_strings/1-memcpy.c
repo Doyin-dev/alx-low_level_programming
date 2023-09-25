@@ -1,23 +1,25 @@
-#include <stdio.h>
+/* 1-memcpy.c */
 
-char *_memcpy(char *dest, char *src, unsigned int n) {
-    char *original_dest = dest;  // Save the original destination pointer
+/**
+ * _memcpy - Copies n bytes from memory area src to memory area dest.
+ * @dest: A pointer to the destination memory area.
+ * @src: A pointer to the source memory area.
+ * @n: The number of bytes to copy.
+ *
+ * Return: A pointer to the destination memory area.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+    char *dest_ptr = dest;
+    char *src_ptr = src;
 
-    while (n--) {
-        *dest++ = *src++;  // Copy byte by byte
+    while (n > 0)
+    {
+        *dest_ptr = *src_ptr;
+        dest_ptr++;
+        src_ptr++;
+        n--;
     }
 
-    return original_dest;  // Return a pointer to the start of the destination
-}
-
-int main() {
-    char source[] = "Hello, World!";
-    char destination[20];
-
-    _memcpy(destination, source, 13);  // Copy 13 bytes from source to destination
-    destination[13] = '\0';  // Null-terminate the destination string
-
-    printf("Copied String: %s\n", destination);
-
-    return 0;
+    return dest;
 }
