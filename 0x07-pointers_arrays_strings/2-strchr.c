@@ -10,12 +10,16 @@
  */
 char *_memcpy_rev(char *dest, char *src, unsigned int n)
 {
-    unsigned int i;
+    char *start_dest = dest;
+    char *start_src = src;
 
-    for (i = 1; i <= n; i++) /* Start from 1 to include null terminator */
+    dest += n - 1;
+    src += n - 1;
+
+    while (n--)
     {
-        dest[n - i] = src[n - i];
+        *dest-- = *src--;
     }
 
-    return (dest);
+    return (start_dest);
 }
