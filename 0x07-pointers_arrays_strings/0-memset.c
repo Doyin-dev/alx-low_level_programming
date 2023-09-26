@@ -1,21 +1,19 @@
-/* 0-memset.c */
-
-/**
- * _memset - Fills the first n bytes of the memory area pointed to by s with the constant byte b.
- * @s: A pointer to the memory area to be filled.
- * @b: The constant byte value to fill the memory with.
- * @n: The number of bytes to fill.
- *
- * Return: A pointer to the memory area s.
- */
-char *_memset(char *s, char b, unsigned int n) {
-    char *ptr = s;
-
-    while (n > 0) {
-        *ptr = b;
-        ptr++;
-        n--;
-    }
-
-    return s;
-}
+/** 
+  * _memset - fill memory with constant byte 
+  * @s: string buffer 
+  * @b: byte to write 
+  * @n: number of bytes to write 
+  * 
+  * Description: The _memset() function fills the first @n bytes of the memory 
+  * area pointed to by @s with the constant byte @b. 
+  * 
+  * Return: pointer to string buffer @s 
+  */ 
+ char *_memset(char *s, char b, unsigned int n) 
+ { 
+         unsigned int i; 
+  
+         for (i = 0; i < n; i++) 
+                 *(s + i) = b; 
+         return (s); 
+ }
