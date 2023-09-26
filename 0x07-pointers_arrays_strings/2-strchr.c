@@ -12,11 +12,12 @@ char *_strchr(char *s, char c)
 {
     int i = 0;
 
-    for (; s[i] != '\0'; i++)
+    while (s[i] != '\0') // Use a while loop to iterate through the string.
     {
         if (s[i] == c)
             return (&s[i]);
+        i++; // Increment i to move to the next character in the string.
     }
 
-    return (NULL);
+    return (NULL); // Return NULL if the character is not found.
 }
